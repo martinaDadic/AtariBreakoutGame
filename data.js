@@ -1,7 +1,7 @@
 const BROJ_CIGLI = 50;
 const POC_BRZINA_LOPTICE = 3;
-const BRZINA_PODLOGE = 8;
-const UBRZAVANJE = 0.25;
+const BRZINA_PODLOGE = 10;
+const UBRZAVANJE = 0.2;
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 let bricks = [];
@@ -58,7 +58,7 @@ function startGame(){
     playerScore = 0;
     bricks = [];
     ball = new ball(535, 470, 30, "#ffffffff");
-    player = new bat(475, 500, 150, 30, "#858585ff", ball);
+    player = new bat(475, 500, 180, 30, "#858585ff", ball);
     for (let i=0;i<10;i++){
         bricks.push(new brick(20 + i*108, 80, 90, 30, "#993300", ball));
     }
